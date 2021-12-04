@@ -1,0 +1,378 @@
+/* -- CSS RESET --*/
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+/*-- Main structual styling--*/
+
+body {
+    background: rgb(255,109,0);
+    background: linear-gradient(180deg, rgba(255,109,0,1) 14%, rgba(255,235,195,1) 41%);
+    color: #333;
+    font-family: mrs-eaves, serif;
+font-weight: 400;
+font-style: normal;
+margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    
+}
+
+.light {
+    background: #FFF1DE;
+    width:80%;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+section, header {
+    width:80%;
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+header {
+    padding-bottom: 3rem;
+
+}
+.text{
+    background:#f7f7f7;
+    padding: 2em;
+    border-radius: 25px;
+}
+
+/*-- styling typography--*/
+ blockquote {
+    color:#CC7E31;
+}
+
+
+p, blockquote, hr {
+    margin-bottom: 0;
+    line-height: 1.4;
+
+}
+p {
+  margin:1rem;
+
+}
+
+h1 {
+    font-size: 5.25rem;
+    color: #f7f7f7;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin: 1em 0 1em 0;
+    color: #CC7E31;
+    font-style:oblique;
+
+}
+
+hr {
+    margin: 2em 0 0 0 
+}
+blockquote {
+    font-size: 1.414rem;
+    font-style: italic;
+    hanging-punctuation: first;
+    text-indent: -0.648rem;
+    margin-top: 4.5rem;
+
+    
+
+}
+cite {
+    font-size: 0.8em;
+    color: #333;
+    font-style: normal;
+
+}
+
+header h2 {
+    font-size: 2.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #f7f7f7;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-left: 300px;
+}
+
+.dark {
+    background: #FF6D00;
+    color:#f7f7f7;
+    padding-bottom: 1vw;
+}
+
+.bottom {
+  background: #FF6D00;
+  color:#f7f7f7;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+
+
+/*--  styling links--*/
+a {
+color: rgb(113, 14, 126);
+text-decoration: none;
+}
+a:hover {
+    color:rgb(51, 97, 110);
+    border-bottom: 2px dotted;
+}
+
+li {
+    color: #333;
+}
+
+/*--Styling nav--*/
+
+nav {
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: #FFF700;
+    padding: 2em 0;
+    font-size: 0.85em;}
+  
+  nav ul {
+    padding-right: 8vw;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;}
+    
+  
+  nav ul li {
+    display: inline;
+    margin: 20px;
+    background: none;}
+  
+  nav a:link {
+    color:#333;
+}
+  
+  nav a:visited {
+    color:#333;
+}
+  
+  nav a:hover {
+    border-bottom: none;
+    color: #333;
+    transition: all 0.3s ease-in-out; } 
+    
+  .logo {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+    padding-right: 30vw;
+    color: #333;
+  }
+  .contact a {color: #fc0}
+  .about a {color: #f39}
+  .contact a:hover {color: #fafafa}
+  .about a:hover {color: #fafafa}
+
+footer {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/*--experimental--*/
+
+.top {
+  position: relative;
+  bottom: 150px; /* Place the button at the bottom of the page */
+  right: -70rem; /* Place the button 30px from the right */
+  border: none; 
+  outline: none; 
+  background-color: #804F1F; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+  width: 90px;
+  text-align: center;
+
+  
+}
+
+.top:hover{
+    color: #FFC730;
+}
+.top a {
+    color: #f7f7f7; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*-- Image control --*/
+img {
+    display: block;
+    margin: 4em 0 0 ;
+    max-width: 100%;
+
+}
+.wolfgang img{
+  border-radius:50%;
+  position: relative;
+  top: -360px;
+  left: 100px;
+  width: 360px;
+  height: 360px;
+
+}
+
+.header-img{
+  position: relative;
+  right: -250px;
+  top: 30px;
+
+}
+/*-- TAble--*/
+
+table {
+    margin: auto;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    margin-bottom: 2em;
+    width: 100%;
+}
+caption {
+    margin: 1.5em 0;
+    text-transform: uppercase;
+}
+th {
+    color: #fdfdfd;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: left;
+    background: #804F1F;
+}
+
+th, td {
+    padding: 0.6em
+}
+
+table, td {
+    background: #ffd78144;
+    border: 2px solid #fdfdfd;
+}
+
+.gridimage {
+display:grid;
+grid-gap:10px;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+    
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    
+  }
+
+  /* test med ruta längst ner hihihihi*/
+  .lbl-toggle {
+    display: block;
+  
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+  
+    padding: 1rem;
+  
+    color: #A77B0E;
+    background: #FAE042;
+  
+    cursor: pointer;
+  
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+    max-width: 700px;
+    margin: auto;
+    
+  }
+  
+  .lbl-toggle:hover {
+    color: #7C5A0B;
+  }
+
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+  
+    transition: max-height .25s ease-in-out;
+    margin-bottom: 1rem;
+  }
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
+    background: #f7f7f7;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 1rem;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 1rem;
+
+
+  }
+  .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+  
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .toggle{
+      opacity:0;
+  }
+  
