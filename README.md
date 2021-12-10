@@ -1,2 +1,2 @@
 # weingart
-weingart essay
+[weingart](https://flinkfeltm.github.io/weingart/weingart.html)
