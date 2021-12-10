@@ -163,7 +163,7 @@ li {
 nav {
     top: 0;
     left: 0;
-    margin: ;
+    margin: 0;
     background-color: #FFF700;
     padding: 1em 0;
     font-size: 0.85em;}
@@ -261,18 +261,21 @@ img {
 .wolfgang img{
   border-radius:50%;
   top: -150px;
-  left: -250px;
-  width: 400px;
-  height: 400px;
+  left: -200px;
+  width: 350px;
+  height: 350px;
   
 
 }
 
 .circular1 img{
   border-radius:50%;
-  top: -700px;
-  right: 200px;
-
+  top: -400px;
+  right: -700px;
+  padding:5px;
+  background: rgb(255, 255, 255);
+  height:250px;
+  width: 250px;
 }
 
 .header-img{
@@ -374,6 +377,7 @@ grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   .collapsible-content {
     max-height: 0px;
     overflow: hidden;
+    font-size: 13px;
   
     transition: max-height .25s ease-in-out;
     margin-bottom: 1rem;
