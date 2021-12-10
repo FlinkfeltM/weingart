@@ -36,7 +36,7 @@ margin: auto;
 }
 
 section, header {
-    width:80%;
+    width:70%;
     max-width: 900px;
     margin: auto;
     
@@ -86,10 +86,10 @@ h1 {
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin: 1em 0 1em 0;
     color: #000000;
-    font-weight:bold;
+    font: weight 200px;
 
 }
 
@@ -137,8 +137,8 @@ header p {
 .bottom {
   background: #FF6D00;
   color:#f7f7f7;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -163,13 +163,13 @@ li {
 nav {
     top: 0;
     left: 0;
-    margin: 0;
+    margin: ;
     background-color: #FFF700;
-    padding: 2em 0;
+    padding: 1em 0;
     font-size: 0.85em;}
   
   nav ul {
-    padding-right: 8vw;
+    padding-right: 2rem;
     text-align: right;
     text-transform: uppercase;
     letter-spacing: 1px;}
@@ -194,10 +194,10 @@ nav {
     transition: all 0.3s ease-in-out; } 
     
   .logo {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    text-align: left;
-    padding-right: 30vw;
+    text-align: right;
+    padding-right: 850px;
     color: rgb(0, 0, 0);
   }
   .contact a {color: #fc0}
@@ -206,8 +206,9 @@ nav {
   .about a:hover {color: #fafafa}
 
 footer {
-    text-align: center;
-    font-size: 0.75rem;
+  max-width: 800px;
+  margin: auto;
+  font-size: 5px;
 }
 
 /*--experiment--*/
@@ -259,11 +260,18 @@ img {
 }
 .wolfgang img{
   border-radius:50%;
-  top: -200px;
-  left: -300px;
-  width: 430px;
-  height: 430px;
+  top: -150px;
+  left: -250px;
+  width: 400px;
+  height: 400px;
   
+
+}
+
+.circular1 img{
+  border-radius:50%;
+  top: -700px;
+  right: 200px;
 
 }
 
