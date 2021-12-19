@@ -19,32 +19,27 @@
  <!-- Öppnar i ny flik-->
  <!--base target="blank"-->
 
- <!-- testar lite JS-->
- <!-- enables you to open and close source tab with space bar-->
- <script type="text/javascript" src="access.js"></script>
-
  <!-- navbar-->
 </head>
 <body> 
-    <div class="collapsible-menu">
-        <input type="checkbox" id="menu">
-        <label for="menu">Menu</label>
-        <div class="menu-content">
-            <ul>
-                <li><a href="#intro"></a>Introduction</li>
-                <li><a href="#EL"></a>Early life</li>
-                <li><a href="#WIB"></a>Where it began</li>
-                <li><a href="#EDU"></a>The Education</li>
-                <li><a href="#THECU"></a>The Curiosity</li>
-                <li><a href="#TEACH"></a>The Teaching</li>
-                <li><a href="#SRC"></a>Sources</li>
-            </ul>
+    <div class="knapp">
+    <div id="menu">
+        <div class="top-font">
+        <a>Menu</a>
+        <h3 class="title">Wolfgang Weingart</h3>
         </div>
+        <p><ul id="list">
+            <li><a href="#intro">Introduction</a></li>
+                <li><a href="#EL">Early life</a></li>
+                <li><a href="#WIB">Where it began</a></li>
+                <li><a href="#EDU">The Education</a></li>
+                <li><a href="#THECU">The Curiosity</a></li>
+                <li><a href="#TEACH">The Teaching</a></li>
+                <li><a href="#SRC">Sources</a></li>
+        </ul>
+    </p>
     </div>
-
-<!-- hamburgar-->
-
-
+</div>
  <!-- essay-->
 <div class="dark">
 <header>
@@ -57,9 +52,9 @@
          <img src="images/weingart_portrait.png" style="float:left;position:relative;" width="537" height="537">
      </div>
 </div>
-         <p>Essay written by Michelle Flinkfelt</p></header>
+         <p>Essay written by Michelle Flinkfelt</p>
+    </header>
 </div>
-
 <div class="light">
  <section>
      <div class=right></div>
@@ -175,7 +170,8 @@
        
     <div class="wrap-collabsible" id="SRC">
         <input id="collapsible" class="toggle" type="checkbox" display:none>
-        <label for="collapsible" class="lbl-toggle" tabindex="0">Sources</label>
+        
+        <label for="collapsible" class="lbl-toggle" tabindex="0" href="#scroll">Sources</label>
         <div class="collapsible-content">
           <div class="content-inner">
             <p>
@@ -203,7 +199,7 @@
           </div>
         </div>
       </div> 
-      <p><a href="https://blogs.ulster.ac.uk/b00813157-ixd/" title="View my personal profile" target="_blank">HTML and CSS by Michelle Flinkfelt</a></p>
+      <p><a href="https://blogs.ulster.ac.uk/b00813157-ixd/" title="View my personal profile" target="_blank" id="scroll">HTML and CSS by Michelle Flinkfelt</a></p>
 </footer>
 </div>
 </body>
