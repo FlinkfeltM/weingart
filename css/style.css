@@ -7,7 +7,7 @@
     line-height: 1em;
 }
 
-/*-- Main structual styling--*/
+/*-- larger bodies on website styling--*/
 
 body {
   background: rgb(255,109,0);
@@ -19,12 +19,8 @@ font-style: normal;
 margin: auto;
 }
 
-@media (max-width: 30em) { 
-    
-}
-
 .light {
-    background: rgb(255, 255, 255);
+    background: #f7f7f7;
     width:80%;
     max-width: 800px;
     margin: auto;
@@ -47,22 +43,38 @@ header {
 
 }
 
-/* återkom till detta*/
-
 header p {
   padding-top: 2rem;
   left: 200px;
   position: relative;
-
-
-  
+ 
 }
 .text{
     background:#f7f7f7;
     padding: 2em;
-    border-radius: 25px;
+    border-radius:25px;
+    box-shadow: 10px 10px 20px rgba(190, 173, 162, 0.068), -10px 10px 20px rgba(187, 171, 161, 0.068);
 }
 
+.dark {
+    background: #FF6D00;
+    color:#f7f7f7;
+    padding-bottom: 1vw;
+}
+
+.bottom {
+  background: #FF6D00;
+  color:#f7f7f7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer {
+  max-width: 800px;
+  margin: auto;
+  font-size: 10px;
+  color:#f1f1f1;
+}
 /*-- styling typography--*/
  blockquote {
     color:#CC7E31;
@@ -77,7 +89,7 @@ p, blockquote, hr {
 }
 p {
   margin:1rem;
-  font-size: 20px;
+  font-size: 17px;
 
 }
 
@@ -89,11 +101,33 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin: 1em 0 1em 0;
-    color: #333;
-    font-weight: bold;
+    padding:1em;
+    color:rgb(0, 0, 0);
     text-transform: uppercase;
     text-align:center;
+    background:#f7f7f7;
+    border-top-right-radius:25px;
+    border-top-left-radius: 25px;
+    text-decoration: underline;
+    
+
+}
+
+h3 {
+  font-weight:bold;
+}
+
+h4 {
+  color:black;
+  font-size:20px;
+  padding:10px;
+}
+
+h5 {
+  color:black;
+  font-size:20px;
+  padding:10px;
+
 
 }
 
@@ -137,21 +171,6 @@ header p {
     margin-left: 300px;
 }
 
-.dark {
-    background: #FF6D00;
-    color:#f7f7f7;
-    padding-bottom: 1vw;
-}
-
-.bottom {
-  background: #FF6D00;
-  color:#f7f7f7;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-
-
 
 /*--  styling links--*/
 a {
@@ -160,64 +179,21 @@ text-decoration: none;
 }
 
 
-li {
-    color: #333;
+a:hover {
+  color:#FFF700;
+  text-decoration:underline;
+  transition: all 0.3s ease-in-out; 
 }
 
-/*--Styling nav--*/
-
-nav {
-    top: 0;
-    left: 0;
-    margin: 0;
-    background-color: #FFF700;
-    padding: 1em 0;
-    font-size: 0.85em;}
-  
-  nav ul {
-    padding-right: 2rem;
-    text-align: right;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  font-weight: bold;}
-    
-  
-  nav ul li {
-    display: inline;
-    margin: 20px;
-    background: none;}
-  
-  nav a:link {
-    color:#333;
-}
-  
-  nav a:visited {
-    color:#333;
-}
-  
-  nav a:hover {
-    border-bottom: none;
-    color: #FF6D00;
-    transition: all 0.3s ease-in-out; } 
-    
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: right;
-    padding-right: 850px;
-    color: rgb(0, 0, 0);
-  }
-
-footer {
-  max-width: 800px;
-  margin: auto;
-  font-size: 10px;
-  color:#f1f1f1;
+.personal {
+  text-align: center;
 }
 
-/*--experiment--*/
 
-/*-- Dum knapp--*/
+
+
+
+/*-- Button that takes you to the top--*/
 
 .top {
   position: relative;
@@ -242,13 +218,17 @@ footer {
 }
 
 .top:hover{
-    color: #FFC730;
     transition: all 0.3s ease-in-out;
-
+    border-color:#FF6D00;
+    color:#FF6D00
 }
 .top a {
     color: #000000; 
     font-weight:bold;
+}
+.top a:hover {
+  color: #FF6D00; 
+  transition: all 0.3s ease-in-out;
 }
 
 html{
@@ -261,6 +241,7 @@ img {
     display: block;
     margin: 4em 0 0 ;
     max-width: 100%;
+    
 
 }
 .wolfgang img{
@@ -269,15 +250,35 @@ img {
   left: -200px;
   width: 350px;
   height: 350px;
+  box-shadow: 10px 10px 20px rgba(138, 110, 94, 0.075), -10px 10px 20px rgba(138, 110, 94, 0.075);
 
 }
 
 .young img{
   border-radius:50%;
-  top: -1725px;
+  top: -2200px;
   right: -750px;
   height:300px;
   width: 300px;
+  box-shadow: 10px 10px 20px rgba(138, 110, 94, 0.075), -10px 10px 20px rgba(138, 110, 94, 0.075);
+}
+
+.young2 img{
+  border-radius:50%;
+  top: 400px;
+  right: 270px;
+  height:300px;
+  width: 300px;
+  box-shadow: 10px 10px 20px rgba(138, 110, 94, 0.075), -10px 10px 20px rgba(138, 110, 94, 0.075);
+}
+
+.round img{
+  border-radius:50%;
+  top: 200px;
+  right: -750px;
+  height:300px;
+  width: 300px;
+  box-shadow: 10px 10px 20px rgba(138, 110, 94, 0.075), -10px 10px 20px rgba(138, 110, 94, 0.075);
 }
 
 .circular3 img{
@@ -286,6 +287,7 @@ img {
   right: 370px;
   height:300px;
   width: 300px;
+  box-shadow: 10px 10px 20px rgba(138, 110, 94, 0.075), -10px 10px 20px rgba(138, 110, 94, 0.075);
 }
 
 .lines img{
@@ -294,6 +296,7 @@ img {
   right: -680px;
   height:300px;
   width: 300px;
+  box-shadow: 10px 10px 20px rgba(138, 110, 94, 0.075), -10px 10px 20px rgba(138, 110, 94, 0.075);
 }
 
 .header-img{
@@ -303,7 +306,14 @@ img {
 
 }
 
-/* Rolig knapp som expanderar med grejs*/
+.gridimage {
+  display:grid;
+  grid-gap:5px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+/*-- funky button that shows source of my research--*/
+
 .collapsible {
     background-color: #eee;
     color: rgb(0, 0, 0);
@@ -322,14 +332,13 @@ img {
   }
 
   .content {
-    padding: 0 18px;
+    padding: 20px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
     
   }
 
-  /* test med ruta längst ner hihihihi*/
   .lbl-toggle {
     display: block;
     font-family: usual, sans-serif;
@@ -388,9 +397,10 @@ img {
   }
   
   .wrap-collabsible {
-    left: -8rem;
+    align-items:center;
     margin:auto;
-    top:-3rem;
+    top:-4rem;
+    position:relative;
 
 
   }
@@ -416,10 +426,13 @@ img {
 
 .content-inner p {
   color:#333;
+  font-size:15px;
 
 }
 
-/*--menue test--*/
+
+
+/*--menu that expands while hovering--*/
 
 #menu #list {
   max-height: 0;
@@ -448,46 +461,50 @@ img {
 .top-font {
   font-size: 30px;
   left:-20rem;
+  position: relative;
+  left:3rem;
+  top:1em;
+  font-weight:bold;
+}
+
+.top-font a:hover {
+  color:black;
+  text-decoration:none;
+  cursor:default;
+  
+
+}
+
+li {
+  padding:1rem 0 1rem 2rem;
+
+
 }
 
 .title      {
   text-align: right;
+  font-size: 30px;
+
 
 }
-/* -- 
 
-nav {
-  top: 0;
-  left: 0;
-  margin: 0;
-  background-color: #FFF700;
-  padding: 1em 0;
-  font-size: 0.85em;}
-
-nav ul {
-  padding-right: 2rem;
-  text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-font-weight: bold;}
-  
-
-nav ul li {
-  display: inline;
-  margin: 20px;
-  background: none;}
-
-nav a:link {
-  color:#333;
+.title:hover {
+  cursor:default;
 }
 
-nav a:visited {
-  color:#333;
-}
-
-nav a:hover {
+li a:hover {
   border-bottom: none;
   color: #FF6D00;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out; 
+  text-decoration:underline;
 
-*/
+}
+
+.arrow-down {
+  position:relative;
+ top:-32px;
+ left:20px;
+
+}
+
+/* That was all, Thank you ( : */
